@@ -14,3 +14,7 @@ set(ax,'fontsize',14);
 xlabel('t')
 ylabel('estimation error norm')
 legend('centralized','distributed','Gramian based distributed','Location','NorthEast')
+
+save('necent.dat','necent','-ascii');
+save('nedist.dat','nedist','-ascii');
+save('nedistg.dat','nedistg','-ascii');

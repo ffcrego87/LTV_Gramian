@@ -4,7 +4,7 @@
 NAg   = 20;   % Number of agents
 dim   = 2;    % Dimension of the local systems
 Amag  = 0.1;  % Magnitude of the dynamics matrix perturbation
-Cmag  = 1;  % Magnitude of the dynamics matrix perturbation
+Cmag  = 1;  % Magnitude of the measurement matrix perturbation
 
 % process noise
 wmag  = 1; % Noise magnitude
@@ -22,7 +22,7 @@ vobs  = 1; % Measurement noise magnitude
 x0obs = 1000;
 
 %% Network
-Circ_order = 2; % communicate with circ_order neighbours on each side
+Circ_order = 1; % communicate with circ_order neighbours on each side
 
 %% Final iteration
 ifinal = 100;
@@ -31,7 +31,7 @@ ifinal = 100;
 samples = 1;
 
 %% Design parameters
-beta = 0.1;
+beta = 0.5;
 alpha = 10^-6;
 kfix = ceil((NAg/Circ_order)+dim);
 
